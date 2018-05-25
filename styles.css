@@ -1,0 +1,366 @@
+body {
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
+h2.header-name {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* LINKS */
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    /* border-style: dashed;
+    border-width: 2px; */
+    background-color: #ff0000;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.first-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1000px) {
+  .first-image {
+    max-width: 1000px;
+  }
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.money {
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.money:hover {
+  background-color: #00ff00;
+}
+
+/* .square {
+  width: 25px;
+  height: 25px;
+  background-color: #ff0000;
+  border-radius: 50%;
+} */
+
+.header-name:hover {
+  color: #ff0000;
+}
+
+.header-name::before {
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  content: '\f111';
+  margin-right: 24px;
+  color: red;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* letter-spacing: 0.5em; */
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-me {
+  font-size: 30px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.name:hover {
+  color: #ff0000;
+}
+
+.highlight {
+  background-color: #ff0000;
+}
+
+.list--vertical {
+  padding-left: 0px;
+}
+
+.list--vertical li {
+  margin-bottom: 0px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-menu {
+  display: flex;
+  padding-left: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  /* letter-spacing: 0.5em; */
+}
+
+.main-menu li{
+  margin-right: 24px;
+}
+
+.employment--grid {;
+  display: flex;
+  flex-direction: column;
+}
+
+.employment {
+}
+
+@media (min-width: 600px) {
+  .employment {
+    width: 47%;
+    margin-right: 3%;
+  }
+
+  .employment--grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -6%;
+  }
+}
+
+.sub-sub-title {
+  font-weight: 700;
+}
+
+.coolbox {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+label {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.meter-skill {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meter-skill-bars {
+  width: 100%;
+}
+
+.meter-skill-bars li {
+  display: flex;
+  width: 100%;
+}
+
+.meter-skill-bars span {
+  flex: 1 0 0;
+}
+
+.meter-skill-bars meter {
+  flex: 3 0 0;
+  height: 18px;
+}
+
+meter::-webkit-meter-bar {
+  background: transparent;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: black;
+}
+
+.email-icon::before {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  content: '\f0e0';
+  margin-right: 12px;
+}
+
+.website-icon::before {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  content: '\f245';
+  margin-right: 12px;
+}
+
+.instagram-icon::before {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  content: '\f16d';
+  margin-right: 12px;
+}
+
+.resume-icon::before {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  content: '\f063';
+  margin-right: 12px;
+}
+
+.footer-home-page {
+  font-size: 30px;
+  color: #black;
+  background-color: #ff0000;
+  margin-top: 45px;
+}
+
+a.website-icon {
+  color: black;
+}
+
+a.website-icon:hover {
+  color: white;
+  background-color: black;
+}
+
+a.instagram-icon {
+  color: black;
+}
+
+a.instagram-icon:hover {
+  color: white;
+  background-color: black;
+}
+
+a.resume-icon {
+  color: black;
+}
+
+a.resume-icon:hover {
+  color: white;
+  background-color: black;
+}
+
+/*
+Display property include:
+
+displayblock
+inline
+inline-block
+flex */
+
+
+
+/*
+important terms going to be used in designing layout
+margin *
+border-radius
+padding *
+display
+width
+height
+ */
+
+
+
+
+/*
+a {
+  color: #00ff00;
+}
+
+.primary {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.secondary {
+  background-color: #dddddd;
+}
+
+#skills {
+  font-size: 50px;
+}
+
+#about {
+  color: #0000ff;
+}
+
+.test-class {
+  color: #00ff00;
+}
+
+h2 {
+  color: #ff0000;
+}
+
+.secondary ul li {
+  color: rebeccapurple;
+}
+
+.footer.home-page {
+  background-color: peru;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  border-radius: 50%;
+}
